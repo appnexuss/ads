@@ -211,7 +211,7 @@ if (EpomInvokeServer.prototype = {
         var t = "";
         if (this.excluded)
             for (j in this.excluded) t += "&excluded=" + this.excluded[j];
-        return this.getHost() + "/" + this.type + "?v=1&key=" + this.key + (e ? e : "") + "&ch=" + this.channel + "&click=" + this.click + "&tz=" + (new Date).getTimezoneOffset() / -60 + "&t=" + (new Date).getTime() + (this.passbackTag ? "&pb=" + this.passbackTag : "") + "http%3a%2f%2fwww.rottentomatoes.com%2f" + this.getReqRef() + "&flashVer=19.0 R0" + (this.width ? "&epom_width=" + this.width : "") + (this.height ? "&epom_height=" + this.height : "") + t + this.toQueryString(this.params) + CustomWLAdServer.getEpomCookiesFromLocalStorage() + this.getScreenResolution()
+        return this.getHost() + "/" + this.type + "?v=1&key=" + this.key + (e ? e : "") + "&ch=" + this.channel + "&click=" + this.click + "&tz=" + (new Date).getTimezoneOffset() / -60 + "&t=" + (new Date).getTime() + (this.passbackTag ? "&pb=" + this.passbackTag : "") + "&requestUrl=http%3a%2f%2fwww.rottentomatoes.com%2f" + this.getReqRef() + "&flashVer=19.0 R0" + (this.width ? "&epom_width=" + this.width : "") + (this.height ? "&epom_height=" + this.height : "") + t + this.toQueryString(this.params) + CustomWLAdServer.getEpomCookiesFromLocalStorage() + this.getScreenResolution()
     },
     invokeIframeSync: function() {
         if (this.repeated && this.elemId && document.getElementById(this.elemId)) {
