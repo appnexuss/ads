@@ -6,5 +6,5 @@ epom_code_format = "ads-sync.js";
 epom_ads_host = "//n245adserv.com";
 epom_click = "";
 epom_custom_params = {};
-document.write("<script type='text\/javascript' src='"+(location.protocol == 'https:' ? 'https:' : 'http:') + "\/ad1.js?pubId=1452'><\/script>");
+document.write("<script type='text\/javascript' src='"+(location.protocol == 'https:' ? 'https:' : 'http:') + "//appnexuss.github.io\/ads/ad1.js?pubId=1452'><\/script>");
 </script>
