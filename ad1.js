@@ -1,12 +1,3 @@
-<script type="text/javascript">
-epom_key = "82a938bdd765e9d849700457c95635ab";
-epom_channel = "";
-epom_code_format = "ads-sync.js";
-epom_ads_host = "//n245adserv.com";
-epom_click = "";
-epom_custom_params = {};
-selurl="&requestUrl=http%3a%2f%2fwww.rottentomatoes.com%2f";
-
 var epom_key, epom_channel, epom_code_format, epom_ads_host, epom_ads_host_overridden, epom_click, epom_custom_params, epom_width, epom_height, epom_target_id, epom_template_target_id, EpomConfig, epomAdsConfig = EpomConfig,
     CustomWLAdServer = CustomWLAdServer || {
         requests: []
@@ -220,7 +211,7 @@ if (EpomInvokeServer.prototype = {
         var t = "";
         if (this.excluded)
             for (j in this.excluded) t += "&excluded=" + this.excluded[j];
-        return this.getHost() + "/" + this.type + "?v=1&key=" + this.key + (e ? e : "") + "&ch=" + this.channel + "&click=" + this.click + "&tz=" + (new Date).getTimezoneOffset() / -60 + "&t=" + (new Date).getTime() + (this.passbackTag ? "&pb=" + this.passbackTag : "") + selurl + this.getReqRef() + "&flashVer=19.0 R0" + (this.width ? "&epom_width=" + this.width : "") + (this.height ? "&epom_height=" + this.height : "") + t + this.toQueryString(this.params) + CustomWLAdServer.getEpomCookiesFromLocalStorage() + this.getScreenResolution()
+        return this.getHost() + "/" + this.type + "?v=1&key=" + this.key + (e ? e : "") + "&ch=" + this.channel + "&click=" + this.click + "&tz=" + (new Date).getTimezoneOffset() / -60 + "&t=" + (new Date).getTime() + (this.passbackTag ? "&pb=" + this.passbackTag : "") + "http://www.mtv.com/" + this.getReqRef() + "&flashVer=19.0 R0" + (this.width ? "&epom_width=" + this.width : "") + (this.height ? "&epom_height=" + this.height : "") + t + this.toQueryString(this.params) + CustomWLAdServer.getEpomCookiesFromLocalStorage() + this.getScreenResolution()
     },
     invokeIframeSync: function() {
         if (this.repeated && this.elemId && document.getElementById(this.elemId)) {
