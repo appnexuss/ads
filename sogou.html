@@ -1,4 +1,6 @@
-<script>
+
+<script type="text/javascript">
+
 function GetQueryString(name)
 {
      var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
@@ -9,11 +11,11 @@ function GetQueryString(name)
 var u_rnd=Math.floor(Math.random()*23);
 var u_rz=Math.floor(Math.random()*9999);
 var wh="1366,768#1440,900#1280,900#1024,768#1920,1080#1600,900";
-var wh_i=Math.floor(Math.random()*5)
+var wh_i=Math.floor(Math.random()*5);
 var wh_arr = wh.split("#");
 
 /var m_url="http://inte.sogou.com/ct?id=630062&h=90&w=960&fv=20&if=0&sohuurl=http%3A%2F%2Fwww.mxgtea.cn%2F&refer=http%3A%2F%2Fwww.mxgtea.cn%2Fnews%sF"+u_rz+".html&rnd=02461e129f65"+u_rz+"&z="+u_rz+"cda062846422&lmt=1433603377&srp="+wh_arr[wh_i]+"&ccd=24&lhi=2&eja=false&npl=5&nmi=7&ece=true&lan=zh-CN&bi=1&t1=184&t2=1468995252&pvt=1468995252082&ssi0=259&ti=%e5%8e%9f%e6%b2%b9%2c%e7%bd%91%e9%a1%b5%e6%b8%b8%e6%88%8f%2c%e7%90%86%e8%b4%a2%2c%e4%bc%a6%e6%95%a6%e9%87%91%2c%e7%9b%b4%e6%92%ad%e5%ae%a4%2c%e5%8f%8c%e7%9c%bc%e7%9a%ae%e6%89%8b%e6%9c%af%2c%e7%9a%ae%e8%82%a4%e7%97%85%2c%e5%8b%83%e8%b5%b7%e5%9b%b0%e9%9a%be%2c%e7%94%9f%e6%ae%96%e5%81%a5%e5%ba%b7&bs=1366,171&tmp_cdif=0&mi=0&m="+GetQueryString(m)+"&ex=&glx=0";
-var m_url="http://www.baidu.com"
+var m_url="http://www.baidu.com";
 document.write("<iframe src='"+m_url+"'> </iframe>");
 
 </script>
